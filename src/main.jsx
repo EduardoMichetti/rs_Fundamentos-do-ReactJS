@@ -1,4 +1,4 @@
-//obs: arquivos .jsx não precisa ser informado a extenção no import
+//obs: arquivo .jsx não precisa ser informado a extenção no import
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/global.css';

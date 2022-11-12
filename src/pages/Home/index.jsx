@@ -18,7 +18,7 @@ export function Home() {
   const [estudantes, setEstudantes] = useState([]); /*esta constante esta declarada como um vetor(lista ...
     ...que vai armazenar os dados dos estudantes*/
 
-  const[user, setUser] = useState({nome: '', avatar: ''});  
+  const[user, setUser] = useState({nome_git: '', avatar: ''});  
 
   function handleAddEstudante(){
     const newEstudante = {
@@ -35,7 +35,7 @@ export function Home() {
     // [['Rodrigo], Amanda]
     //para evitar isso usamos os três pontos antes
     */ 
-    setEstudantes(conteudoAnterior => [...conteudoAnterior, newEstudante])
+    setEstudantes(conteudoAnterior => [...conteudoAnterior, newEstudante])    
   }
 
   /*FORMA PADRÃO DE USAR O useEffect*/ 
@@ -62,6 +62,8 @@ export function Home() {
         name: data.name,
         avatar: data.avatar_url,
       });
+
+      
     }
     /*NA PARTE DE CIMA CRIAMOS A FUNÇÃO ASSÍNCRONA AGORA VAMOS CHAMAR ELA*/  
     fetchData();
@@ -72,7 +74,7 @@ export function Home() {
     <div className='container' >
       <header>
        
-        <h1>Lista de Presença {studentName}</h1>        
+        <h1>Lista de Presença</h1>        
         
         <div>
           <strong>{user.name}</strong>
@@ -102,7 +104,7 @@ export function Home() {
             key={estudante.horaAtual}
             name={estudante.nome} 
             time={estudante.horaAtual}
-          />)
+          />)          
       }
     </div>
   )
