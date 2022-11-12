@@ -1,0 +1,20 @@
+.card {
+    height: 100px; /* altura*/
+    width: 50%; /* largura*/
+
+    background: #735bf2; /*roxo*/
+    color: #fff; /*branco*/
+
+    border-radius: 10px; /*arredondamento*/
+    margin-bottom: 20px; /*sempre quem tiver embaixo empurrar mais 20px para não ficar colado*/
+
+    display: flex;
+    align-items: center; /* alinhar na vertical*/ 
+    justify-content: space-between; /*alinhar na horizontal*/
+    padding: 24px; /*espaçamento entre eles*/
+
+}
+
+.card strong {
+    font-size: 18px;
+}
